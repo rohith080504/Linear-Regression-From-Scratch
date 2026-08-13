@@ -85,3 +85,10 @@ A similar procedure can be used to test hypothesis about the intercept
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H1 : b1 != 0  
 This hypothesis relate to the significance of regression. Failing to reject H0 implies that there is no linear relationship between x and y
 
+## 💻 Code Quickstart
+
+### Prerequisites
+Only `matplotlib` is required for rendering diagnostic plots.
+
+```bash
+pip install matplotlib
