@@ -10,15 +10,15 @@ Objective of regression analysis is to estimate the unknown parameters in the re
 Regression models (regression equation) is only an approximation to the true functional relationship between the variables of interest  
 Functional Relationship --> mechanical models  
 Regression models --> Empirical models  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = b0 + b1x1 + b2x2 +......bnxn + e is the regression equation  
-where, b0 = intercept, b1,b2,....bn are the slopes of relative x's, x's are the regressor variable or features in machine learning lingo and y is the response variable or target variable  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = \beta_0 + \beta_1 x1 + \beta_1 x2 + ..... + \beta_1 x + \epsilon is the regression equation  
+where, \beta_0 = intercept, \beta_1,\beta_2,....\beta_n are the slopes of relative x's, x's are the regressor variable or features in machine learning lingo and y is the response variable or target variable  
 
 ### What is simple linear regression?  
 It is a model with a single regressor that has a relationship with a response y that is a straight line  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = b0 +b1x + e  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = \beta_0 + \beta_1 x + \epsilon  
 &nbsp;&nbsp;&nbsp;&nbsp; and y is a random variable. That is, there is a probability distribution for y at each possible value for x  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The mean and variance of this distribution is  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E(y|x) = b0 + b1x  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E(y|x) = \beta_0 + \beta_1 x  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var(y|x) = σ²  
 The mean of y is a linear function of x  
 although the variance of y does not depend on the value of x  
@@ -32,7 +32,7 @@ There are multiple methods to estimate these parameters but in this project we u
 ### What is ordinary least square estimation method?  
 The method of ordinary least squares used to estimate b0 and b1. we estimate b0 and b1 so that the sum of the squares of the difference between the observations yi and the straight line is a minimum  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i.e S(b0,b1) = ∑(yi-b0-b1xi)^2  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where yi = b0 + b1xi + ei, i = 1,2,3....n  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where y = \beta_0 + \beta_1 x + \epsilon, i = 1,2,3....n  
 to find the minima of s(b0,b1) we differentiate with respect to bo and b1 and make it equal to zero  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∂S(b0,b1)/∂bo = 0, ∂S(b0,b1)/∂b1 = 0  
 then we get b1 estimate = cov(x,y)/var(x)  
@@ -85,7 +85,7 @@ A similar procedure can be used to test hypothesis about the intercept
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H1 : b1 != 0  
 This hypothesis relate to the significance of regression. Failing to reject H0 implies that there is no linear relationship between x and y
 
-## 💻 Code Quickstart
+## Code Quickstart
 
 ### Prerequisites
 Only `matplotlib` is required for rendering diagnostic plots.
