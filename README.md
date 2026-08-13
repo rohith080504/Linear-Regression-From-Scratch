@@ -1,3 +1,7 @@
+# Linear Regression from Scratch (Pure Python OLS)
+
+An end-to-end implementation of **Simple Linear Regression** built from first principles using pure Python arithmetic and Ordinary Least Squares (OLS) estimation. This project implements parameter estimation, property proofs, hypothesis testing, and residual diagnostics—without using machine learning libraries (`scikit-learn`) or high-level mathematical helpers (`np.mean`, `np.sum`).  
+
 # Regression Analysis:
 Regression Analysis is a statistical technique for investigating and modeling the relationship between variables  
 * It is the most widely used statistical technique  
