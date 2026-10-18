@@ -75,8 +75,8 @@ All of these issues must be investigated before the model is finally adopted for
 $\hat{\beta}_0$ and $\hat{\beta}_1$ estimates are unbiased estimators of the model parameters $\beta_0$ and $\beta_1$:
 $$\mathbb{E}(\hat{\beta}_0) = \beta_0, \quad \mathbb{E}(\hat{\beta}_1) = \beta_1$$
 
-Their sampling variances are:
-$$\text{Var}(\hat{\beta}_0) = \sigma^2 \left( \frac{1}{n} + \frac{\bar{x}^2}{S_{xx}} \right)$$
+Their sampling variances are: 
+$$\text{Var}(\hat{\beta}_0) = \sigma^2 \left( \frac{1}{n} + \frac{\bar{x}^2}{S_{xx}} \right)$$ 
 $$\text{Var}(\hat{\beta}_1) = \frac{\sigma^2}{S_{xx}}$$
 
 ### Properties of the Least-Squares Fit
